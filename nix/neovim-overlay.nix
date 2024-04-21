@@ -80,6 +80,8 @@ with final.pkgs.lib; let
 
     toggleterm-nvim
     flatten-nvim
+    
+    nord-nvim
   ];
 
   extraPackages = with pkgs; [
