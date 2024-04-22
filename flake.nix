@@ -5,6 +5,8 @@
     nixpkgs.url = "github:WSK-nixpkgs-fork-1/nixpkgs/nixos-unstable-small";
     flake-utils.url = "github:numtide/flake-utils";
     gen-luarc.url = "github:mrcjkb/nix-gen-luarc-json";
+    nordic-nvim.url = "github:AlexvZyl/nordic.nvim";
+    nordic-nvim.flake = false;
 
     # Add bleeding-edge plugins here.
     # They can be updated with `nix flake update` (make sure to commit the generated flake.lock)

@@ -81,13 +81,14 @@ with final.pkgs.lib; let
     toggleterm-nvim
     flatten-nvim
     
-    nord-nvim
+    (mkNvimPlugin inputs.nordic-nvim "nordic-nvim")
   ];
 
   extraPackages = with pkgs; [
     # language servers, etc.
     lua-language-server
     nil # nix LSP
+    rust-analyzer
   ];
 in {
   # This is the neovim derivation

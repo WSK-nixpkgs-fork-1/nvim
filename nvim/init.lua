@@ -14,6 +14,7 @@ if fn.has('termguicolors') then
   opt.termguicolors = true
 end
 
+vim.cmd.colorscheme 'nordic'
 -- See :h <option> to see what the options do
 
 -- Search down into subfolders
@@ -113,3 +114,5 @@ vim.g.sqlite_clib_path = require('luv').os_getenv('LIBSQLITE')
 -- on the packpath when passing a file to the nvim command
 cmd.syntax('on')
 cmd.syntax('enable')
+
+vim.cmd.colorscheme 'nordic'
