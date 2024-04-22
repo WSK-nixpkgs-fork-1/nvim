@@ -4,7 +4,7 @@ if vim.fn.executable('rust-analyzer') ~= 1 then
 end
 
 local root_files = {
-  'main.rs',
+  'main.rs'
 }
 
 vim.lsp.start {
