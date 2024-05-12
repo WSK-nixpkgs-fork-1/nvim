@@ -53,53 +53,20 @@ cmp.setup {
     end,
   },
   mapping = {
-    ['<C-b>'] = cmp.mapping(function(_)
+    ["<Tab>"] = cmp.mapping(function(fallback)
+      -- This little snippet will confirm with tab, and if no entry is selected, will confirm the first item
       if cmp.visible() then
-        cmp.scroll_docs(-4)
-      else
-        complete_with_source('buffer')
-      end
-    end, { 'i', 'c', 's' }),
-    ['<C-f>'] = cmp.mapping(function(_)
-      if cmp.visible() then
-        cmp.scroll_docs(4)
-      else
-        complete_with_source('path')
-      end
-    end, { 'i', 'c', 's' }),
-    ['<C-n>'] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_next_item()
-      -- expand_or_jumpable(): Jump outside the snippet region
-      -- expand_or_locally_jumpable(): Only jump inside the snippet region
-      elseif luasnip.expand_or_locally_jumpable() then
-        luasnip.expand_or_jump()
-      elseif has_words_before() then
-        cmp.complete()
+        local entry = cmp.get_selected_entry()
+	      if not entry then
+	        cmp.select_next_item({ behavior = cmp.SelectBehavior.Select })
+	      end
+	      cmp.confirm()
       else
         fallback()
       end
-    end, { 'i', 'c', 's' }),
-    ['<C-p>'] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_prev_item()
-      elseif luasnip.jumpable(-1) then
-        luasnip.jump(-1)
-      else
-        fallback()
-      end
-    end, { 'i', 'c', 's' }),
-    -- toggle completion
-    ['<C-e>'] = cmp.mapping(function(_)
-      if cmp.visible() then
-        cmp.close()
-      else
-        cmp.complete()
-      end
-    end, { 'i', 'c', 's' }),
-    ['<C-y>'] = cmp.mapping.confirm {
-      select = true,
-    },
+    end, {"i","s","c",}),
+    ['<Down>'] = cmp.mapping(cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select }), {'i', 's', 'c'}),
+    ['<Up>'] = cmp.mapping(cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }), {'i', 's', 'c'}),
   },
   sources = cmp.config.sources {
     -- The insertion order influences the priority of the sources
@@ -148,16 +115,3 @@ cmp.setup.cmdline(':', {
   },
 })
 
-vim.keymap.set({ 'i', 'c', 's' }, '<C-n>', cmp.complete, { noremap = false, desc = '[cmp] complete' })
-vim.keymap.set({ 'i', 'c', 's' }, '<C-f>', function()
-  complete_with_source('path')
-end, { noremap = false, desc = '[cmp] path' })
-vim.keymap.set({ 'i', 'c', 's' }, '<C-o>', function()
-  complete_with_source('nvim_lsp')
-end, { noremap = false, desc = '[cmp] lsp' })
-vim.keymap.set({ 'c' }, '<C-h>', function()
-  complete_with_source('cmdline_history')
-end, { noremap = false, desc = '[cmp] cmdline history' })
-vim.keymap.set({ 'c' }, '<C-c>', function()
-  complete_with_source('cmdline')
-end, { noremap = false, desc = '[cmp] cmdline' })

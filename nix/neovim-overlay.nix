@@ -79,6 +79,10 @@ with final.pkgs.lib; let
     # ^ bleeding-edge plugins from flake inputs
     which-key-nvim
 
+    noice-nvim
+    nui-nvim
+    nvim-notify
+
     toggleterm-nvim
     flatten-nvim
     catppuccin-nvim  

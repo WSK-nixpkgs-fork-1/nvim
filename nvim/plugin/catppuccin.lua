@@ -39,8 +39,17 @@ require("catppuccin").setup({
             enabled = true,
             indentscope_color = "",
         },
+        noice = true,
+        navic = {
+          enabled = true,
+          custom_bg = "NONE",
+        },
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     },
 })
+
+require("nvim-navic").setup {
+    highlight = true
+}
 
 vim.cmd.colorscheme "catppuccin"
