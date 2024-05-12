@@ -80,8 +80,7 @@ with final.pkgs.lib; let
 
     toggleterm-nvim
     flatten-nvim
-    
-    (mkNvimPlugin inputs.nordic-nvim "nordic-nvim")
+    catppuccin-nvim  
   ];
 
   extraPackages = with pkgs; [
