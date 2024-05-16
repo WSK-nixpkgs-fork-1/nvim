@@ -95,6 +95,8 @@ with final.pkgs.lib; let
     rust-analyzer
     cargo
     rustc
+    pyright
+    kotlin-language-server
   ];
 in {
   # This is the neovim derivation
