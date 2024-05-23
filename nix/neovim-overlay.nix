@@ -97,6 +97,9 @@ with final.pkgs.lib; let
     rustc
     pyright
     kotlin-language-server
+    clangStdenv
+    clang-tools
+    arduino-language-server
   ];
 in {
   # This is the neovim derivation
