@@ -12,6 +12,10 @@
     #   url = "github:Cassin01/wf.nvim";
     #   flake = false;
     # };
+    typst-preview = {
+      url = "github:chomosuke/typst-preview.nvim";
+      flake = false;
+    };
   };
 
   outputs = inputs @ {

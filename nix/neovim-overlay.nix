@@ -86,6 +86,8 @@ with final.pkgs.lib; let
     toggleterm-nvim
     flatten-nvim
     catppuccin-nvim  
+
+    (mkNvimPlugin inputs.typst-preview "typst-preview.nvim")
   ];
 
   extraPackages = with pkgs; [
@@ -100,6 +102,8 @@ with final.pkgs.lib; let
     clangStdenv
     clang-tools
     arduino-language-server
+    tinymist
+    websocat
   ];
 in {
   # This is the neovim derivation

@@ -11,3 +11,5 @@ require'lspconfig'.kotlin_language_server.setup{}
 require'lspconfig'.clangd.setup{}
 
 require'lspconfig'.arduino_language_server.setup{}
+
+require'lspconfig'.tinymist.setup{}
