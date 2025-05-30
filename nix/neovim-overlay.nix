@@ -88,6 +88,8 @@ with final.pkgs.lib; let
     catppuccin-nvim  
 
     (mkNvimPlugin inputs.typst-preview "typst-preview.nvim")
+
+    pear-tree
   ];
 
   extraPackages = with pkgs; [
