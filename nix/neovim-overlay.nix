@@ -106,6 +106,7 @@ with final.pkgs.lib; let
     arduino-language-server
     tinymist
     websocat
+    typescript-language-server
   ];
 in {
   # This is the neovim derivation

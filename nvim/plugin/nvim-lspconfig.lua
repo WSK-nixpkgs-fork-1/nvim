@@ -13,3 +13,5 @@ require'lspconfig'.clangd.setup{}
 require'lspconfig'.arduino_language_server.setup{}
 
 require'lspconfig'.tinymist.setup{}
+
+require'lspconfig'.ts_ls.setup{}
