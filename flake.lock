@@ -60,11 +60,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1724097937,
-        "narHash": "sha256-Q4tgm8ZHAQUdvsNft86MqIbHQAm7OF7RT/wwYWXqSdY=",
+        "lastModified": 1755304025,
+        "narHash": "sha256-xVKfjFwc0zMbLMjLTiHz+0llggkjs93SmHkhaa9S3M4=",
         "owner": "mrcjkb",
         "repo": "nix-gen-luarc-json",
-        "rev": "b36b69c4ded9f31b079523bc452e23458734cf00",
+        "rev": "1865b0ebb753ae5324d7381b1fa8c98c04ec7509",
         "type": "github"
       },
       "original": {
@@ -181,11 +181,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1743245314,
-        "narHash": "sha256-SN1/wWFsgj3uvyCEYmkHowTrWm8wEpaB2fScCopFvzs=",
+        "lastModified": 1770456334,
+        "narHash": "sha256-9k193aW1zRxptFwuQKRkj0SDTUHkxEDQBQ5wSR5mrF8=",
         "owner": "WSK-nixpkgs-fork-1",
         "repo": "nixpkgs",
-        "rev": "94d83201c5c7320f210b7454aff5a3bb102c52d5",
+        "rev": "2b79ae9194306bc85320f3191d075bb20a825b26",
         "type": "github"
       },
       "original": {
@@ -221,11 +221,11 @@
     "typst-preview": {
       "flake": false,
       "locked": {
-        "lastModified": 1745168797,
-        "narHash": "sha256-BGNgGpg6ixvQ7bZl1pFRi3B1lqKDZqI4Ix3gFQVFxXg=",
+        "lastModified": 1767173994,
+        "narHash": "sha256-2IGGLRLVf1Or6nu3y07HQZ2fvcOzWOUNZ4B6eMUeugc=",
         "owner": "chomosuke",
         "repo": "typst-preview.nvim",
-        "rev": "dea4525d5420b7c32eebda7de15a6beb9d6574fa",
+        "rev": "bf5d5eaf23bbfcca9f98a24ed29bd084abf89bf2",
         "type": "github"
       },
       "original": {

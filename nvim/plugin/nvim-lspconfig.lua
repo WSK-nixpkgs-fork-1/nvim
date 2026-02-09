@@ -1,17 +1,17 @@
-require'lspconfig'.nil_ls.setup{}
+vim.lsp.enable('nil_ls')
 
-require'lspconfig'.rust_analyzer.setup{}
+vim.lsp.enable('rust_analyzer')
 
-require'lspconfig'.lua_ls.setup{}
+vim.lsp.enable('lua_ls')
 
-require'lspconfig'.pyright.setup{}
+vim.lsp.enable('pyright')
 
-require'lspconfig'.kotlin_language_server.setup{}
+vim.lsp.enable('kotlin_language_server')
 
-require'lspconfig'.clangd.setup{}
+vim.lsp.enable('clangd')
 
-require'lspconfig'.arduino_language_server.setup{}
+vim.lsp.enable('arduino_language_server')
 
-require'lspconfig'.tinymist.setup{}
+vim.lsp.enable('tinymist')
 
-require'lspconfig'.ts_ls.setup{}
+vim.lsp.enable('ts_ls')
