@@ -9,3 +9,5 @@ vim.g.did_load_plugins_plugin = true
 require('nvim-surround').setup()
 require('which-key').setup()
 require("nvim-autopairs").setup {}
+require("conjure").setup() 
+

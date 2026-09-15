@@ -91,12 +91,15 @@ with final.pkgs.lib; let
 
     nvim-autopairs
     
+    conjure
     conjure-nvim
     vim-sexp
     vim-sexp-mappings-for-regular-people
     rainbow-delimiters-nvim
 
     Ionide-vim
+    mason-nvim
+    mason-lspconfig-nvim
   ];
 
   extraPackages = with pkgs; [

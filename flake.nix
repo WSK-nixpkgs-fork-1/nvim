@@ -58,7 +58,7 @@
           nil
           stylua
           luajitPackages.luacheck
-          dotnet_10
+          dotnet-sdk_10
           fsautocomplete
         ];
         shellHook = ''
