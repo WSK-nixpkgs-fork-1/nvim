@@ -117,6 +117,9 @@ with final.pkgs.lib; let
     tinymist
     websocat
     typescript-language-server
+    luajitPackages.luacheck
+    dotnet-sdk_10
+    fsautocomplete
   ];
 in {
   # This is the neovim derivation
