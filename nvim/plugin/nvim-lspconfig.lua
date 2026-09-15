@@ -18,4 +18,8 @@ vim.lsp.enable('ts_ls')
 
 vim.lsp.enable('racket_langserver')
 
+vim.lsp.config('racket_langserver',{
+  filetypes = { "racket", "rhombus", "rhm" },
+})
+
 --vim.lsp.enable('fsautocomplete')
