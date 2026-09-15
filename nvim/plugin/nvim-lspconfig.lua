@@ -15,3 +15,7 @@ vim.lsp.enable('arduino_language_server')
 vim.lsp.enable('tinymist')
 
 vim.lsp.enable('ts_ls')
+
+vim.lsp.enable('racket_langserver')
+
+-- vim.lsp.enable('fsautocomplete')

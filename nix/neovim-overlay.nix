@@ -89,7 +89,14 @@ with final.pkgs.lib; let
 
     (mkNvimPlugin inputs.typst-preview "typst-preview.nvim")
 
-    pear-tree
+    nvim-autopairs
+    
+    conjure-nvim
+    vim-sexp
+    vim-sexp-mappings-for-regular-people
+    rainbow-delimiters-nvim
+
+    Ionide-vim
   ];
 
   extraPackages = with pkgs; [

@@ -58,6 +58,8 @@
           nil
           stylua
           luajitPackages.luacheck
+          dotnet_10
+          fsautocomplete
         ];
         shellHook = ''
           # symlink the .luarc.json generated in the overlay
