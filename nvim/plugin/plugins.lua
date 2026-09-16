@@ -8,6 +8,13 @@ vim.g.did_load_plugins_plugin = true
 
 require('nvim-surround').setup()
 require('which-key').setup()
-require("nvim-autopairs").setup {}
 require("conjure").setup() 
 
+local npairs = require("nvim-autopairs")
+local cond = require("nvim-autopairs.conds")
+
+npairs.setup({
+    enable_check_bracket_line = false,
+})
+
+npairs.get_rules("'")[1].not_filetypes = { "racket" }
