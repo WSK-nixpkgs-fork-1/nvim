@@ -18,3 +18,4 @@ npairs.setup({
 })
 
 npairs.get_rules("'")[1].not_filetypes = { "racket" }
+vim.g.sexp_filetypes = "racket,lisp,scheme,clojure"
