@@ -120,6 +120,7 @@ with final.pkgs.lib; let
     luajitPackages.luacheck
     dotnet-sdk_10
     fsautocomplete
+    fantomas
   ];
 in {
   # This is the neovim derivation
